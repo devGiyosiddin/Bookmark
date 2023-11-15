@@ -250,7 +250,7 @@ img {
   padding-bottom: 263px;
   background-image: url("../img/blue-pill.svg");
   background-repeat: no-repeat;
-  background-position: calc(50% + 854px) 141px;
+  background-position: calc(50% + 745px) 138px;
 }
 
 .hero-container {
@@ -312,18 +312,14 @@ img {
 .hero-content__img {
   position: absolute;
   top: -68px;
-  right: -60px;
+  right: -71px;
 }
 
 /* SECTION */
 .section {
-  /* width: 100%; */
-  /* max-width: 1440px;
-  margin: 0 auto 48px; */
 }
 
 .section__info {
-  /* width: 540px; */
   text-align: center;
 }
 
