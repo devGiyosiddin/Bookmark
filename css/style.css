@@ -415,9 +415,11 @@ img {
   width: 243px;
   border-bottom: 1px solid rgba(73, 93, 207, 0.2);
 }
+
 .tabs__item--active .tabs__link {
   color: var(--black);
   border-color: var(--red);
+  outline: 0;
 }
 
 .tabs__link {
@@ -437,6 +439,7 @@ img {
 }
 .tabs__link:active {
   opacity: 0.6;
+  outline: 0;
 }
 
 /* TAB-PANELS */
@@ -446,8 +449,11 @@ img {
   background-position: calc(50% + -580px) 158px;
 }
 
-.tab__panel {
-  /* display: none; */
+.tabs__panel {
+  display: none;
+}
+.tabs__panel--active {
+  display: block;
 }
 
 
