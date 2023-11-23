@@ -17,10 +17,10 @@ elsTabLink.forEach(function (elTabLink) {
     elTabLink.addEventListener('click', function(evt) {
         // Prevent page move
         evt.preventDefault();
-
+        
         // Remove active class from tabs-item elements
         deactivateTabItems();
-
+        
         // Add active class to current Tabs-item
         elTabLink.parentElement.classList.add('tabs__item--active')
         
@@ -28,7 +28,8 @@ elsTabLink.forEach(function (elTabLink) {
         deactivatetabPanels();
         
         // Show active tab panel
-        const elTargetPanel = document.querySelector(`#${elTabLink.href.split('#')[1]}`);
+        // const elTargetPanel = document.querySelector(`#${elTabLink.href.split('#')[1]}`);
+        const elTargetPanel = document.querySelector(elTabLink.dataset.tabTarget);
         elTargetPanel.classList.add('tabs__panel--active');
     });
 });
