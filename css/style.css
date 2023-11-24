@@ -168,6 +168,8 @@ img {
 }
 .extensions-button {
   color: #FFF;
+  padding: 10px 35px;
+  text-decoration: none;
   text-align: center;
   font-size: 14px;
   font-style: normal;
@@ -175,8 +177,19 @@ img {
   line-height: 28px;
   letter-spacing: 0.25px;
   border-radius: 5px;
+  border: 1px solid currentColor;
   background: #5267DF;
   box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20);
+  transition: 0.4s;
+}
+.extensions-button:hover {
+  background-color: #fff;
+  color: var(--blue);
+  border-color : var(--blue);
+}
+.extensions-button:active {
+  opacity: 0.7;
+  outline: 0;
 }
 
 
@@ -466,6 +479,97 @@ img {
 }
 
 
+/* EXTENSION */
+.extension {
+  margin-bottom: 149px;
+}
+
+.extension-info {
+  margin-bottom: 48px;
+}
+.section__title {}
+
+.section__text {}
+
+.extensions-list {
+  width: 100%;
+  max-width: 908px;
+  margin: auto;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.extensions-item {
+  position: relative;
+  width: 280px;
+  height: 371px;
+  padding: 49px 23px 24px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px -5px rgba(73, 93, 207, 0.20);
+}
+.extensions-item:not(:last-child) {
+  margin-right: 34px;
+}
+
+.extensions-item:nth-child(2) {
+  margin-top: 40px;
+}
+.extensions-item:nth-child(3) {
+  margin-top: 80px;
+}
+
+.extensions-item::after {
+  position: absolute;
+  left: 0;
+  bottom: 96px;
+  width: 100%;
+  height: 4px;
+  content: "";
+  bottom: 96px;
+  background-image: url("../img/extension_dotted_line.svg");
+  background-position: center;
+}
+
+.extensions-item__logo {
+  margin: 0 65px 32px;
+}
+
+.extensions-item__title {
+  margin: 0;
+  margin-bottom: 6px;
+  text-align: center;
+  color: var(--black);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.25px;
+}
+
+.extensions-item__text {
+  margin: 0;
+  margin-bottom: 56px;
+  text-align: center;
+  color: var(--black-05);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+/* .extensions-item__divider {
+  position: absolute;
+  width: 280px;
+  margin: -24px -24px 0 -24px;
+  border: 0;
+    border-top: px dotted rgba(73, 93, 207, 0.20);
+    height: 4px;
+    width: 100%;
+} */
+
+.extensions-item__button {
+}
 
 /* RETINA */
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
