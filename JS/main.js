@@ -1,3 +1,5 @@
+const modifiers = ''
+
 const elsTabsItem = document.querySelectorAll('.tabs__item');
 const elsTabsPanel = document.querySelectorAll('.tabpanels__item');
 const elsTabLink = document.querySelectorAll('.js-tab-link');
