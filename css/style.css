@@ -360,12 +360,21 @@ img {
 .feature-tab-panel {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .feature-tab-panel__img {
   margin-right: 30px;
   object-fit: contain;
+}
+.simple-bookmarking__img {
+  margin-right: 125px;
+}
+.speedy-searching__img {
+  margin-right: 115px;
+}
+.easy-sharing__img {
+  margin-right: 148px;
 }
 
 .feature-tab-panel__info {
