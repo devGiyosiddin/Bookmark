@@ -866,7 +866,21 @@ img {
     width: 40vw;
     height: auto;
     margin-right: 30px;
-  } 
+  }
+  .hero {
+    background-position: calc(50% + 611px) 136px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .hero {
+    background-image: url("../img/blue-pill-mini.svg");
+    background-position: calc(90% + 30vw) 136px;
+  }
+  .tabpanels {
+    background-image: url("../img/blue-pill-mini.svg");
+    background-position: calc(50% + -380px) 209px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -977,12 +991,24 @@ img {
     margin-left: auto;
     margin-right: auto;
   }
+  .hero__content-img {
+    max-width: 70vw;
+    height: auto;
+    margin-bottom: 70px;
+  }
+  .tabpanels {
+    background-position: calc(50% + -380px) 25vw;
+  }
 }
 
 @media screen and (max-width: 576px) {
   .hero__header {
     font-size: 30px;
   }
+  .hero-actions__button {
+    font-size: 14px;
+  }
+  
   .secton-title {
     font-size: 24px;
   }
@@ -1013,6 +1039,19 @@ img {
   .feature-tab-panel__button {
     display: none;
   }
+  .hero__content-img {
+    max-width: 80vw;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .hero__header {
+    max-width: 60%;
+    margin: 0 auto;
+    margin-bottom: 16px;
+  }
+  .tabpanels {
+    background-position: calc(50% + -180px) 50vw;
+  }
   
 }
 @media screen and (max-width: 480px) {
@@ -1020,5 +1059,29 @@ img {
     width: 88px;
     flex-grow: 1;
     margin-top: 220px;
+  }
+  .hero-actions {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-actions__button,
+  .hero-actions__button-2nd {
+    width: 60vw;
+    margin: 0 auto;
+  }
+  .hero-actions__button:nth-child(1) {
+    margin-bottom: 16px;
+  }
+  .hero {
+    background-position: calc(90% + 57vw) 90px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .hero__content-img {
+    max-width: 100%;
+  }
+  .tabpanels {
+    background-position: calc(50% + -180px) 40vw;
   }
 }
