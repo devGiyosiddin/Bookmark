@@ -62,8 +62,12 @@ elsAccordionItemToggler.forEach(function(elAccordionItemToggler) {
 /* Sitenav Menu modal */
 const elSitenavBtn = document.querySelector('.sitenav-button');
 const elSitenav = document.querySelector('.sitenav__list');
+const elSitenavLogo = document.querySelector('.site-header__logo');
 if (elSitenavBtn) {
     elSitenavBtn.addEventListener('click', function () {
+        elSitenavBtn.classList.toggle('sitenav-menu-close');
         elSitenav.classList.toggle('sitenav__list--active');
+        elSitenavLogo.src = 'img/site-logo-white.svg';
+        document.body.classList.toggle("body-hidden");
     });
 };
