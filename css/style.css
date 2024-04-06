@@ -1102,6 +1102,10 @@ img {
   .subscription__field:not(:focus):not(:placeholder-shown):invalid {
     padding-bottom: 16px;
   }
+  .subscription__heading {
+    font-weight: 500;
+    font-size: 24px;
+  }
 }
 
 @media screen and (max-width: 380px) {
@@ -1110,5 +1114,14 @@ img {
   }
   .tabpanels {
     background-position: calc(50% + -180px) 40vw;
+  }
+  .subscription__field {
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .subscription__error {
+    width: 60vw;
+    left: 7vw;
   }
 }
