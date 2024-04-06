@@ -881,6 +881,21 @@ img {
     background-image: url("../img/blue-pill-mini.svg");
     background-position: calc(50% + -380px) 209px;
   }
+  .extensions-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .extensions-item:not(:last-child) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 875px) {
+  .extensions-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 768px) {
