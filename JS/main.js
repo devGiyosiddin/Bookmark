@@ -57,3 +57,13 @@ elsAccordionItemToggler.forEach(function(elAccordionItemToggler) {
         elAccordionItemToggler.closest('.accordion__item').classList.add(modifiers.accordionItemOpen);
     })
 })
+
+
+/* Sitenav Menu modal */
+const elSitenavBtn = document.querySelector('.sitenav-button');
+const elSitenav = document.querySelector('.sitenav__list');
+if (elSitenavBtn) {
+    elSitenavBtn.addEventListener('click', function () {
+        elSitenav.classList.toggle('sitenav__list--active');
+    });
+};
