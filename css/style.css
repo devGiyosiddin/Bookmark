@@ -1090,6 +1090,18 @@ img {
   .hero {
     background-position: calc(90% + 57vw) 90px;
   }
+  .subsctiption-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .subscription__field-wrapper {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+  .subscription__field:not(:focus):not(:placeholder-shown):invalid {
+    padding-bottom: 16px;
+  }
 }
 
 @media screen and (max-width: 380px) {
