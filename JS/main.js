@@ -67,7 +67,7 @@ if (elSitenavBtn) {
     elSitenavBtn.addEventListener('click', function () {
         elSitenavBtn.classList.toggle('sitenav-menu-close');
         elSitenav.classList.toggle('sitenav__list--active');
-        elSitenavLogo.src = 'img/site-logo-white.svg';
+        elSitenavLogo.classList.toggle('site-header__logo--white');
         document.body.classList.toggle("body-hidden");
     });
 };

@@ -314,12 +314,17 @@ img {
   height: 25px;
   object-fit: contain;
   z-index: 11;
+  color: var(--black);
 }
 .site-header__logo:hover {
   opacity: 0.8;
 }
 .site-header__logo:active {
   opacity: 0.6;
+}
+
+.site-header__logo--white {
+  color: #fff;
 }
 
 .sitenav {
