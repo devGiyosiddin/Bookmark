@@ -1186,7 +1186,6 @@ img {
   }
 }
 @media screen and (max-width: 380px) {
-
   .subscription__field {
     width: 90vw;
     margin-left: auto;
