@@ -146,7 +146,7 @@ img {
   line-height: 28px;
   letter-spacing: 0.25px;
   text-decoration: none;
-  border: 0;
+  border: 2px solid transparent;
   border-radius: 5px; 
   background: var(--red);
   box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20);
@@ -191,9 +191,8 @@ img {
   font-style: normal;
   font-weight: 500;
   line-height: 200%;
-  letter-spacing: 0.02em;
   border-radius: 5px;
-  border: 1px solid currentcolor;
+  border: 2px solid transparent;
   background: #5267df;
   box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20);
   transition: 0.4s;
@@ -413,6 +412,7 @@ img {
 .hero-actions__button {
   text-decoration: none;
   margin-right: 16px;
+  border: 2px solid transparent;
 }
 .hero-actions__button:hover {
   color: var(--blue);
@@ -660,7 +660,6 @@ img {
   font-weight: 400;
   line-height: 28px;
 }
-
 
 
 /* faq */
