@@ -1077,6 +1077,9 @@ img {
 }
 
 @media screen and (max-width: 576px) {
+  .hero-content {
+    width: 100%;
+  }
   .hero__header {
     font-size: 30px;
   }
@@ -1123,6 +1126,7 @@ img {
     max-width: 60%;
     margin: 0 auto;
     margin-bottom: 16px;
+    font-size: 20px;
   }
   .tabpanels {
     background-position: calc(50% + -180px) 50vw;
