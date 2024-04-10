@@ -1178,12 +1178,18 @@ img {
     background-position: calc(50% + -180px) 40vw;
   }
   .subscription__field {
-    width: 90vw;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
   }
   .subscription__error {
     width: 60vw;
     left: 7vw;
+  }
+}
+@media screen and (max-width: 380px) {
+
+  .subscription__field {
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
